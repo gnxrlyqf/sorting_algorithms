@@ -26,7 +26,8 @@ void insertion_sort_list(listint_t **list)
 			if (current == *list)
 			{
 				current->next = iterator->next;
-				current->next->prev = current;
+				if (iterator->next)
+					current->next->prev = current;
 				iterator->next = (*list);
 				(*list)->prev = iterator;
 				(*list) = iterator;
