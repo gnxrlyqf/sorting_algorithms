@@ -35,7 +35,7 @@ void insertion_sort_list(listint_t **list)
 				break;
 			}
 			else
-				swap(current, iterator, list);
+				swap_nodes(current, iterator, list);
 			current = current->prev;
 			swapped = 1;
 		}
@@ -51,7 +51,7 @@ void insertion_sort_list(listint_t **list)
  * @list: pointer to a pointer to the head node of the list
 */
 
-void swap(listint_t *left, listint_t *right, listint_t **list)
+void swap_nodes(listint_t *left, listint_t *right, listint_t **list)
 {
 	listint_t *temp1, *temp2;
 
