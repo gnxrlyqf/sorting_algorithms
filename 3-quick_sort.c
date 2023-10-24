@@ -36,7 +36,7 @@ void actual_quick_sort(int *array, int start, int end, size_t size)
 
 /**
  * part - partitions a subarray using the Lomuto partition scheme
- * @array: subarray to part
+ * @array: array to part
  * @start: start index of subarray
  * @end: end index of subarray
  * @size: size of array
@@ -69,7 +69,7 @@ void swap(int *array, int input1, int input2, size_t size)
 {
 	int temp;
 
-	if (input1 == input2)
+	if (input1 == input2 || array[input1] == array[input2])
 		return;
 	temp = array[input2];
 	array[input2] = array[input1];

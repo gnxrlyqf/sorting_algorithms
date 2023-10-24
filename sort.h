@@ -25,4 +25,5 @@ void quick_sort(int *array, size_t size);
 void actual_quick_sort(int *array, int start, int end, size_t size);
 int part(int *array, int start, int end, size_t size);
 void swap(int *array, int input1, int input2, size_t size);
+
 #endif
